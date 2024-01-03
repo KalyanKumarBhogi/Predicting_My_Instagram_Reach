@@ -104,6 +104,8 @@ plt.imshow(wordcloud, interpolation='bilinear') </p>
 plt.axis("off") </p>
 plt.show() </p>
 
+![image](https://github.com/KalyanKumarBhogi/Predicting_My_Instagram_Reach/assets/144279085/1189f14f-e68f-4654-b3ab-821ad0a313c2)
+
 # Analyzing Relationships
 Now let’s analyze relationships to find the most important factors of our Instagram reach. It will also help us in understanding how the Instagram algorithm works.
 
