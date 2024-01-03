@@ -78,6 +78,32 @@ fig.show()    </p>
 
 So the above donut plot shows that almost 50 per cent of the reach is from my followers, 38.1 per cent is from hashtags, 9.14 per cent is from the explore section, and 3.01 per cent is from other sources.
 
+# Analyzing Content
+Now let’s analyze the content of my Instagram posts. The dataset has two columns, namely caption and hashtags, which will help us understand the kind of content I post on Instagram. </p>
+
+Let’s create a wordcloud of the caption column to look at the most used words in the caption of my Instagram posts:  </p>
+
+text = " ".join(i for i in data.Caption)  </p>
+stopwords = set(STOPWORDS) </p>
+wordcloud = WordCloud(stopwords=stopwords, background_color="white").generate(text) </p>
+plt.style.use('classic') </p>
+plt.figure( figsize=(12,10)) </p>
+plt.imshow(wordcloud, interpolation='bilinear') </p>
+plt.axis("off") </p>
+plt.show() </p>
+
+![image](https://github.com/KalyanKumarBhogi/Predicting_My_Instagram_Reach/assets/144279085/cf408570-58d7-48d5-a3b0-18362b836f6f)
+
+Now let’s create a wordcloud of the hashtags column to look at the most used hashtags in my Instagram posts: </p>
+
+text = " ".join(i for i in data.Hashtags) </p>
+stopwords = set(STOPWORDS) </p>
+wordcloud = WordCloud(stopwords=stopwords, background_color="white").generate(text) </p>
+plt.figure( figsize=(12,10)) </p>
+plt.imshow(wordcloud, interpolation='bilinear') </p>
+plt.axis("off") </p>
+plt.show() </p>
+
 # Analyzing Relationships
 Now let’s analyze relationships to find the most important factors of our Instagram reach. It will also help us in understanding how the Instagram algorithm works.
 
